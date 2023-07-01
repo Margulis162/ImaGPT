@@ -5,6 +5,16 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
 
+  const RenderCards = ({data, title}) => {
+    if(data?.lenght > 0){
+      return data.map((post) => <Card key= {post._id} {...post} />)
+    }
+
+    return (
+      <h2 className='mt-5 font-bold text-[#373637] text-lg'>{title}</h2>
+    )
+  }
+
   const [searchText, setSearchText] = useState(" ")
 
   return (
@@ -29,9 +39,22 @@ const Home = () => {
           <>
           {searchText && (
             <h2 className='font-medium text-[#4f5152] text-lg mb-3'>
-              Showing results for <span className='text-[#3c3840]'>{searchText}</span>
+              Showing results for: <span className='text-[#3c3840]'>{searchText}</span>
             </h2>
           )}
+          <div className='grid lg:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-3'>
+            {searchText ? (
+              <RenderCards
+              data={[]}
+              title="Nothing found :( Try again!"
+              />
+            ) : (
+              <RenderCards
+              data={[]}
+              title="I couldn't find any posts. Give me another shot!"
+              />
+            )}
+          </div>
 
           </>
         )}
