@@ -23,12 +23,13 @@ const Loader = () => (
 <g transform="translate(-15 0)">
     <path d="M50 50L20 50A30 30 0 0 0 80 50Z" fill="#52b9ed" transform="rotate(90 50 50)"/>
     <path d="M50 50L20 50A30 30 0 0 0 80 50Z" fill="#59ff18">
-        <animate attributeName="fill" from="cyan" to="hotpink" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="fill" from="#00cccc" to="#da0b73" dur="2s" repeatCount="indefinite" />
         <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.6s" values="0 50 50;45 50 50;0 50 50" keyTimes="0;0.5;1"/>
     </path>
     <path d="M50 50L20 50A30 30 0 0 1 80 50Z" fill="#62f7ff" to="black" dur="2s" repeatCount="indefinite">
-    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;-45 50 50;0 50 50" keyTimes="0;0.5;1"/>
-    <animate attributeName="fill" from="cyan" to="hotpink" dur="2s" repeatCount="indefinite" />
+    <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.8s" values="0 50 50;-45 50 50;0 50 50" keyTimes="0;0.5;1"/>
+    <animate attributeName="fill" from="#00cccc" to="#da0b73" dur="2s" repeatCount="indefinite" alternate />
+    
     </path>
 </g>
 </svg>
