@@ -10,7 +10,7 @@ const App = () => {
       <Link to="/">
         <img src= { logo } alt="logo" className= "w-28 object-contain" /></Link>
 
-      <Link to= "/create-post" className='font-inter font-medium bg-gradient-to-r from-cyan-400 to-pink-500 text-white px-4 py-2 rounded-full ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300'>Create</Link>
+      <Link to= "/create-post" className='font-inter font-medium bg-gradient-to-r from-cyan-400 to-pink-500 text-white px-4 py-2 rounded-full ease-in-out delay-100 hover:-translate-y-1 hover:scale-105 duration-300'>Start</Link>
       
     </header>
     <main className='sm: p-8 px-4 py-2 w-full bg-[#a0a0a0] min-h-[calc(100vh-73px)]'>
