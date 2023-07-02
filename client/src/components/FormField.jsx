@@ -1,9 +1,9 @@
 import React from 'react'
 
 const FormField = () => {
-  return (
+    return (
     <div>FormField</div>
-  )
+)
 }
 
 export default FormField
