@@ -15,7 +15,7 @@ const Home = () => {
     )
   }
 
-  const [searchText, setSearchText] = useState(" ")
+  const [searchText, setSearchText] = useState(' ')
 
   return (
     <section className='max-w-7x1 mx-auto'>
@@ -46,7 +46,7 @@ const Home = () => {
             {searchText ? (
               <RenderCards
               data={[]}
-              title="Nothing found :( Try again!"
+              title="Nothing found :("
               />
             ) : (
               <RenderCards
