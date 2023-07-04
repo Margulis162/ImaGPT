@@ -5,7 +5,7 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
     <div className='flex items-center gap-2 mb-2'>
         <label
             htmlFor={name}
-            className='block text-medium font-medium text-gray-600'
+            className='block text-md font-medium text-gray-600'
         >
             {labelName}
         </label>
