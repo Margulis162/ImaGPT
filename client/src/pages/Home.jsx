@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <section className='max-w-7x1 mx-auto'>
       <div>
-        <h1 className='font-bold text-[#3c3840] text-[32px]'>Discover Most Popular Generated Images</h1>
+        <h1 className='font-bold text-[#3c3840] text-[32px]'>Discover More Stunning Generated Images</h1>
         <p className='mt-2 text-[#4f5152] text-[1.3rem] max-w-[500px]'> See what other people generated with AI</p>
       </div>
 
