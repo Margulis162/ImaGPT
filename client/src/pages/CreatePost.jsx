@@ -21,6 +21,10 @@ const handleChange = (e) => {
 }
 const handleSurpriseMe = () => {}
 
+const generateImage = () => {
+
+}
+
 
 
   return (
@@ -52,7 +56,7 @@ const handleSurpriseMe = () => {}
             handleSurpriseMe={handleSurpriseMe}
           />
 
-          <div className='relative bg-gray-50 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center'>
+          <div className='relative bg-[#dbd9d9] border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center'>
             {form.photo ? (
               <img
                 src={form.photo}
@@ -62,19 +66,28 @@ const handleSurpriseMe = () => {}
               <img
                 src={preview}
                 alt='preview'
-                className='w-9/12 h-9/12 object-contain opacity -40'/>
+                className='w-9/12 h-9/12 object-contain opacity-40'/>
             )}
 
             {generatingImg && (
-              <div className='absolute inset-0 z-0 flex justify-center iyems-center bg-[rgba(0,0,0,0.5)] rounded-lg'>
+              <div className='absolute inset-0 z-0 flex justify-center items-center bg-[#dbd9d9]  rounded-lg'>
                 <Loader />
               </div>
-              
+
             )}
           </div>
         </div>
 
+        <div className='mt-5 flex gap-5 text-[#666666] '>
+          <button
+            type='button'
+            onClick={generateImage}
 
+          >
+            {generateImage ? 'Generating. . .' : 'Generate' }
+
+          </button>
+        </div>
       </form>
     </section>
   )
