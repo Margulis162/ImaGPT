@@ -16,10 +16,17 @@ const [loading, setLoading] = useState(false);
 const handleSubmit = () => {
 
 }
+
+
 const handleChange = (e) => {
+  setForm({... form, [e.target.name]: e.target.value })
 
 }
-const handleSurpriseMe = () => {}
+
+const handleSurpriseMe = () => {
+  const randomPrompt = getRandomPrompt(form.prompt);
+  setForm({...form, prompt: randomPrompt})
+}
 
 const generateImage = () => {
 
@@ -93,10 +100,8 @@ const generateImage = () => {
           <button
             type='submit'
             className='font-inter font-bold bg-gradient-to-b from-[#aeaeae] to-[#c0c0c0] border-2 border-[#c2c2c2] border-b-[#a1a1a1] text-[#7b7a7a] text-sm px-3 py-2 rounded-2xl shadow-md' 
-
           >
             {loading ? 'Sharing . . .' : 'Share'}
-
           </button>
         </div>
       </form>
