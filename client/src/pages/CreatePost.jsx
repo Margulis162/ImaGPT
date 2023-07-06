@@ -26,7 +26,7 @@ const handleSurpriseMe = () => {}
   return (
     <section className='max-w-7xl mx-auto'>
       <div>
-        <h1 className='mt-4 font-inter font-bold text-[#444246] text-[2rem]'>Generate original pictures based on dataset of thousands of talented artists artworks gathered across the internet</h1>
+        <h1 className='mt-4 font-inter font-bold text-[#444246] text-[2rem]'>Generate original pictures based on dataset of thousands of talented artists artworks gathered across the Internet</h1>
         <p className='mt-8 font-inter font-bold text-[#525157] text-[1.3rem] max-w-[900px]'>Compose high quality references and presets for your project with AI </p>
       </div>
 

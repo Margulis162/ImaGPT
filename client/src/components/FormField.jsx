@@ -14,10 +14,10 @@ const FormField = ({ labelName, type, name, placeholder, value, handleChange, is
             <button
                 type='button'
                 onClick={handleSurpriseMe}
-                className='font-inter font-bold bg-gradient-to-b from-[#b2b2b2] to-[#bbbcbc] border-2 border-[#c1c2c2] border-b-[#acacac] text-[#e9e9e9] text-sm px-3 py-2 rounded-2xl shadow-md'
+                className='font-inter font-bold bg-gradient-to-b from-[#aeaeae] to-[#c0c0c0] border-2 border-[#c2c2c2] border-b-[#a1a1a1] text-[#7b7a7a] text-sm px-3 py-2 rounded-2xl shadow-md'
                 
             >
-            Suggest idea?
+            Suggest idea
 
             </button> 
         )}
